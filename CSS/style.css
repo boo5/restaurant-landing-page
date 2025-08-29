@@ -1,0 +1,165 @@
+/* Import elegant fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400&display=swap');
+/* Add this to your existing style.css file */
+
+/* Set the whole page background */
+body {
+    background-color: #0d2e29; /* Same as navbar */
+    color: #fff; /* White text for contrast */
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:#0d2e29;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3)
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 60px;
+}
+.logo {
+    color:#f5c76d;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+.nav-links li{
+    display: inline-block;
+}
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+
+}
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #f5c76d; /* Golden highlight */
+}
+.btn-book {
+  background: #f5c76d;
+  color: #0d2e29;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-book:hover {
+  background: #d8a947;
+  color: white;
+}
+.hero {
+    height: 100vh;
+    background: #0d2e29;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    margin-top: 70px; /* To account for fixed header */
+}
+.hero-content {
+    max-width: 800px;
+}
+
+/* Style for h1 elements */
+.hero-content h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+/* Divider line */
+.divider {
+    height: 2px;
+    width: 80px;
+    background: #f5c76d;
+    margin: 25px auto;
+}
+
+/* Style for paragraphs */
+.hero-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Hero subtitle style */
+.hero-subtitle {
+    max-width: 800px;
+}
+.hero-subtitle p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #f5c76d;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .navbar {
+        padding: 18px 20px;
+    }
+    
+    .nav-links {
+        gap: 15px;
+    }
+    
+    .nav-links li a {
+        font-size: 16px;
+    }
+}
+/* Style for your image */
+.section-image {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    max-width: 1400px;
+     /* Adjust based on your preference */
+}
